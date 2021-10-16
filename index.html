@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.min.css">
+  <link rel="stylesheet" href="../html/index.html">
+  <title>KaKaU</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+    <div class="container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-check-fill"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+      </svg>
+      <a class="navbar-brand font-weight-bold" href="#">KaKaU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Reseller</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Hubungi Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Bantuan</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+  <!-- list group -->
+  <div class="row mt-5 no-gutters">
+    <div class="col-md-2 bg-light">
+      <ul class="list-group list-group-flush p-2 pt-4 ">
+        <li class="list-group-item bg-warning"> Produk</li>
+        <li class="list-group-item"><i class="fas fa-angle-double-right mr-5" aria-hidden="true"></i>Peralatan Elektronik</li>
+        <li class="list-group-item"><i class="fas fa-angle-double-right" aria-hidden="true"></i>Aksesoris Elektronik</li>
+        <li class="list-group-item"><i class="fas fa-angle-double-right" aria-hidden="true"></i>Fashion Pria</li>
+        <li class="list-group-item"><i class="fas fa-angle-double-right" aria-hidden="true"></i>Fashion Wanita</li>
+        <li class="list-group-item"><i class="fas fa-angle-double-right" aria-hidden="true"></i>Fashion Anak</li>
+        <li class="list-group-item"><i class="fas fa-angle-double-right" aria-hidden="true"></i>Otomotif</li>
+        <li class="list-group-item"><i class="fas fa-angle-double-right" aria-hidden="true"></i>Hobby & Olahraga</li>
+      </ul>
+    </div>
+    <div class="col-md-10">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/slide1.jpg" class="d-block w-100" alt="slide1">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/slide2.jpg" class="d-block w-100" alt="slide2">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/slide3.jpg" class="d-block w-100" alt="slide3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h3 class="bg-light">Produk Terbaru</h3>
+      <div class="row mx-auto">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/headphone.jpg" class="card-img-top" alt="headphone">
+            <div class="card-body">
+              <h5 class="card-title">Headphone Bluetooth</h5>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star-half-alt text-warning"></li>
+              <br>
+              <p class="card-text">Headphone bluetoothe free ongkir</p>
+              <a href="#" class="btn btn-primary" data-bs-target="#produk1" data-bs-toggle="modal">Detail</a>
+              <a href="#" class="btn btn-danger">Rp 225.000</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/kamera.jpg" class="card-img-top" alt="camera">
+            <div class="card-body">
+              <h5 class="card-title">Camera Canon T700</h5>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="far fa-star text-warning"></li>
+              <li class="far fa-star text-warning"></li>
+              <li class="far fa-star text-warning"></li>
+              <br>
+              <p class="card-text">Kamera DSLR Canon T700</p>
+              <a href="#" class="btn btn-primary" data-bs-target="#produk2" data-bs-toggle="modal">Detail</a>
+              <a href="#" class="btn btn-danger">Rp 5.000.000</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/laptop.jpg" class="card-img-top" alt="laptop">
+            <div class="card-body">
+              <h5 class="card-title">Laptop Asus 8856</h5>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star-half-alt text-warning"></li>
+              <li class="far fa-star text-warning"></li>
+              <li class="far fa-star text-warning"></li>
+              <br>
+              <p class="card-text">Laptop Asus RAM 8 GB </p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produk3">Detail</a>
+              <a href="#" class="btn btn-danger">Rp 8.000.000</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/speaker.jpg" class="card-img-top" alt="speaker">
+            <div class="card-body">
+              <h5 class="card-title">Speaker Bluetooth</h5>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <br>
+              <p class="card-text">Speaker bluetoothe free ongkir</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produk4">Detail</a>
+              <a href="#" class="btn btn-danger">Rp 500.000</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mx-auto mt-3">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/ssd.jpg" class="card-img-top" alt="ssd">
+            <div class="card-body">
+              <h5 class="card-title">SSD Samsung</h5>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star-half-alt text-warning"></li>
+              <br>
+              <p class="card-text">External SSD Samsung kapasitas 500 Gb</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produk5">Detail</a>
+              <a href="#" class="btn btn-danger">Rp 225.000</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/jacket.jpg" class="card-img-top" alt="jacket">
+            <div class="card-body">
+              <h5 class="card-title">Jacket Kulit</h5>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star-half-alt text-warning"></li>
+              <br>
+              <p class="card-text">Jacket Kulit import bahan kulit buaya</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produk6">Detail</a>
+              <a href="#" class="btn btn-danger">Rp 180.000</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/sdcard.jpg" class="card-img-top" alt="sdcard">
+            <div class="card-body">
+              <h5 class="card-title">SDCARD SANDISK</h5>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <br>
+              <p class="card-text">SSD CARD SANDISK ULTRA kapasitas 128 Gb</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produk7">Detail</a>
+              <a href="#" class="btn btn-danger">Rp 100.000</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/usb.jpg" class="card-img-top" alt="usb">
+            <div class="card-body">
+              <h5 class="card-title">USB iphone</h5>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <li class="fas fa-star text-warning"></li>
+              <br>
+              <p class="card-text">USB hhusus iphone bukan bahan nylon</p>
+              <a href="#" class="btn btn-primary data-bs-toggle=" modal" data-bs-target="#produk8">Detail</a>
+              <a href="#" class="btn btn-danger">Rp 500.000</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="produk1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="../img/headphone.jpg" alt="headphone">
+                </div>
+                <div class="col-md-6">
+                  <table class="table table-hover">
+                    <tr>
+                    <tr>
+                      <th>Gaming</th>
+                      <td>Ya</td>
+                    </tr>
+                    <tr>
+                      <th>Tipe Koneksi</th>
+                      <td>Wirelless</td>
+                    </tr>
+                    <tr>
+                      <th>Kesesuaian audio</th>
+                      <td>lainnya</td>
+                    </tr>
+                    <tr>
+                      <th>Stok</th>
+                      <td>20</td>
+                    </tr>
+                    <tr>
+                      <th>Dikirim Dari</th>
+                      <td>KOTA BEKASI - MEDAN SATRIA, JAWA BARAT, ID</td>
+                    </tr>
+                  </table>
+                  <p>Specs of the ATH-M20x headphones:</p>
+                  <ul>
+                    <li>Type Dynamic closed-back</li>
+                    <li>Magnet Neodymium</li>
+                    <li>Driver Diameter 40 mm</li>
+                    <li>Sensitivity 98 dB</li>
+                    <li>Voice Coil (CCAW) Copper-clad AluminiumWire</li>
+                    <li>Impedance 35 ohms</li>
+                    <li>Input Power (Maximum) 1,600 MW (at 1 kHz)</li>
+                    <li>Accessories Carrying pouch (cloth-like) and screw-on adapter (6.3 mm or 0.25 inc hes)</li>
+                    <li>Weight 240 g or 8.5 oz (without the connector and cable)</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="produk2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="../img/kamera.jpg" alt="kamera">
+                </div>
+                <div class="col-md-6">
+                  <table class="table table-hover">
+                    <tr>
+                    <tr>
+                      <th>Stok</th>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <th>Dikirim Dari</th>
+                      <td>KOTA JAMBI - JAMBI TIMUR, JAMBI, ID</td>
+                    </tr>
+                  </table>
+                  <p>PRODUCT HIGHLIGHTS :</p>
+                  <ul>
+                    <li>24.2MP APS-C CMOS Sensor</li>
+                    <li> DIGIC 7 Image Processor</li>
+                    <li>3.0" 1.04m-Dot Vari-Angle Touchscreen</li>
+                    <li>Full HD 1080p Video Recording at 60 fps</li>
+                    <li>45-Point All Cross-Type Phase-Detect AF</li>
+                    <li>Dual Pixel CMOS AF</li>
+                    <li>Up to 6 fps Shooting and ISO 51200</li>
+                    <li>Built-In Wi-Fi with NFC, Bluetooth</li>
+                    <li>Top LCD and Rear Quick Control Dial</li>
+                    <li>RGB+IR 7560-Pixel Metering Sensor</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="produk3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="../img/laptop.jpg" alt="laptop">
+                </div>
+                <div class="col-md-6">
+                  <table class="table table-hover">
+                    <tr>
+                    <tr>
+                      <th>Merek</th>
+                      <td>Asus</td>
+                    </tr>
+                    <tr>
+                      <th>Jenis Penyimpanan</th>
+                      <td>mmc</td>
+                    </tr>
+                    <tr>
+                      <th>Berat Produk</th>
+                      <td>1,6 kg</td>
+                    </tr>
+                    <tr>
+                      <th>Masa Garansi</th>
+                      <td>12 Bulan</td>
+                    </tr>
+                    <tr>
+                      <th>Jenis Garansi</th>
+                      <td>Garansi Distributor</td>
+                    </tr>
+                    <tr>
+                      <th>Produsen Chipset Grafis</th>
+                      <td>Integrated</td>
+                    </tr>
+                    <tr>
+                      <th>Model Laptop</th>
+                      <td>u9</td>
+                    </tr>
+                    <tr>
+                      <th>Sistem Operasi</th>
+                      <td>Windows</td>
+                    </tr>
+                    <tr>
+                      <th>Ukuran Layar Laptop</th>
+                      <td>14 inch</td>
+                    </tr>
+                    <tr>
+                      <th>Tipe Prosesor</th>
+                      <td>Intel Celeron</td>
+                    </tr>
+                    <tr>
+                      <th>Kapasitas Penyimpanan</th>
+                      <td>192GB</td>
+                    </tr>
+                    <tr>
+                      <th>Jumlah Core</th>
+                      <td>Dual-Core</td>
+                    </tr>
+                    <tr>
+                      <th>Dikirim Dari</th>
+                      <td>KOTA JAKARTA SELATAN - SETIA BUDI, DKI JAKARTA, ID</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="produk4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="../img/speaker.jpg" alt="speaker">
+                </div>
+                <div class="col-md-6">
+                  <table class="table table-hover">
+                    <tr>
+                    <tr>
+                      <th>Merek</th>
+                      <td>vivan</td>
+                    </tr>
+                    <th>Masa Garansi</th>
+                    <td>12 Bulan</td>
+                    </tr>
+                    <tr>
+                      <th>Jenis Garansi</th>
+                      <td>Garansi Supplier</td>
+                    </tr>
+                    <tr>
+                      <th>Tipe Koneksi</th>
+                      <td>Wireless</td>
+                    </tr>
+                    <th>Dikirim Dari</th>
+                    <td>KOTA JAKARTA UTARA - PENJARINGAN, DKI JAKARTA, I</td>
+                    </tr>
+                  </table>
+                  <p>Keunggulan:</p>
+                  <ul>
+                    <li>SURROUND SOUND 360°. Suara speaker dapat menyebar luas ke setiap sudut ruangan.</li>
+                    <li>Dentuman bass terdengar maksimal berkat dukungan speaker driver 60mm.</li>
+                    <li>Suara jernih dengan kualitas SOUND Hi-Fi juga hadir untuk memanjakan telinga pendengarnya.</li>
+                    <li>Menggunakan Bluetooth 5.0 untuk menjaga kestabilan koneksi tanpa kabel dan mencegah hadirnya
+                      delay.</li>
+                    <li>Sudah mendukung TRUE WIRELESS STEREO. Mode ini akan aktif jika 2 unit speaker VS12 disambungkan
+                      secara bersamaan, sehingga efek stereo akan terdengar secara otomatis.</li>
+                    <li>Perlindungan WATERPROOF IPX6 membuat speaker VS12 dapat digunakan secara aman di luar ruangan.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="produk5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="../img/ssd.jpg" alt="ssd">
+                </div>
+                <div class="col-md-6">
+                  <table class="table table-hover">
+                    <tr>
+                    <tr>
+                      <th>Merek</th>
+                      <td>Samsung</td>
+                    </tr>
+                    <th>Masa Garansi</th>
+                    <td>12 Bulan</td>
+                    </tr>
+                    <tr>
+                      <th>Jenis Garansi</th>
+                      <td>Garansi Distributor Resmi</td>
+                    </tr>
+                    <tr>
+                      <th>Internal/Eksternal</th>
+                      <td>Internal</td>
+                    </tr>
+                    <tr>
+                      <th>Tipe Memori</th>
+                      <td>SSD</td>
+                    </tr>
+                    <tr>
+                      <th>Port/Interface</th>
+                      <td>SATA III</td>
+                    </tr>
+                    <tr>
+                      <th>SSD From Factor</th>
+                      <td>2.5"</td>
+                    </tr>
+                    <tr>
+                      <th>Kapasitas Penyimpanan</th>
+                      <td>500GB</td>
+                    </tr>
+                    <tr>
+                      <th>Tipe Dimensi</th>
+                      <td>10 X 7 X 0.7 cm</td>
+                    </tr>
+                    <tr>
+                      <th>Dikirim Dari</th>
+                      <td>KOTA JAKARTA PUSAT - SAWAH BESAR, DKI JAKARTA, ID</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="produk6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="../img/jacket.jpg" alt="jacket">
+                </div>
+                <div class="col-md-6">
+                  <table class="table table-hover">
+                    <tr>
+                    <tr>
+                      <th>Merek</th>
+                      <td>X urband Metal</td>
+                    </tr>
+                    <th>Negara Asal</th>
+                    <td>Planet bekasi</td>
+                    </tr>
+                    <tr>
+                      <th>Bahan</th>
+                      <td>Semi kulit</td>
+                    </tr>
+                    <tr>
+                      <th>Tipe Jaket</th>
+                      <td>Jaket Metal</td>
+                    </tr>
+                    <tr>
+                      <th>Panjang Luaran</th>
+                      <td>Panjang</td>
+                    </tr>
+                    <tr>
+                      <th>Motif</th>
+                      <td>Polos</td>
+                    </tr>
+                    <tr>
+                      <th>Gaya</th>
+                      <td>Basic</td>
+                    </tr>
+                    <tr>
+                      <th>Jenis Kulit</th>
+                      <td>Sintetis</td>
+                    </tr>
+                    <tr>
+                      <th>Dikirim Dari</th>
+                      <td>KAB. BANDUNG - SOREANG, JAWA BARAT, ID</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="produk7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Detail Produk</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="../img//sdcard.jpg" alt="sdcard">
+                </div>
+                <div class="col-md-6">
+                  <table class="table table-hover">
+                    <tr>
+                    <tr>
+                      <th>Merek</th>
+                      <td>Sandiskl</td>
+                    </tr>
+                    <th>Garansi</th>
+                    <td>Garansi Internasional</td>
+                    </tr>
+                    <tr>
+                      <th>Kapasitas Penyimpanan</th>
+                      <td>128GB</td>
+                    </tr>
+                    <tr>
+                      <th>Tipe Kartu Memori</th>
+                      <td>Micro SD Card</td>
+                    </tr>
+                    <tr>
+                      <th>Dikirim Dari</th>
+                      <td>KOTA SURABAYA - LAKAR SANTRI, JAWA TIMUR, ID</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="footer bg-dark text-white p-5">
+    <div class="row">
+      <div class="col-md-3">
+        <h5>LAYANAN PELANGGAN</h5>
+        <ul>
+          <li>Pusat Banatuan</li>
+          <li>Cara Pembelian</li>
+          <li>Pengiriman</li>
+          <li>Cara Pengembalian</li>
+        </ul>
+      </div>
+      <div class="col-md-3 text-justify">
+        <h5>TENTANG KAMI</h5>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est deserunt voluptas fuga rem minus impedit unde exercitationem necessitatibus facere quasi mollitia, ullam ipsa aut quia. Nemo nostrum magni molestias porro.</p>
+      </div>
+      <div class="col-md-3">
+        <h5>MITRA KAMI</h5>
+        <ul>
+          <li>Gojek</li>
+          <li>Grab</li>
+          <li>Si cepat</li>
+          <li>PT. Pos Indonesia</li>
+          <li>JNE</li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>HUBUNGI KAMI</h5>
+        <ul>
+          <li>(021)- 67895</li>
+          <li><a href="mailto:karuniaputri892@gmail.com">Email kami</a></li>
+          <li><a href="http://instragram/karunia_putri09">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end footer -->
+  <div class="copyright text-center text-white font-white-bold bg-warning p-2">
+    <p>Developed by Karuka <i class="far fa-copyright"></i>2021</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
